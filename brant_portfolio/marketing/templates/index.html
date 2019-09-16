@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brant's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'marketing/style.css' %}">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
@@ -65,7 +66,7 @@
             <div class="sectionContent" id="civil">
                 <div class="half" id="civil-img">
                     <a href="https://www.cccesi.com/" class="img-link" target="_blank">
-                        <img class="projectImage" src="/img/cccesi.PNG" alt="">
+                        <img class="projectImage" src="{% static 'img/cccesi.PNG' %}" alt="">
                     </a>
                 </div>
                 <div class="half center" id="civil-content">
@@ -93,7 +94,7 @@
             <div class="sectionContent" id="excused">
                 <div class="half" id="excused-img">
                     <a href="http://excused-excuse-generator.herokuapp.com/" class="img-link" target="_blank">
-                        <img class="projectImage" src="/img/excused.PNG" alt="">
+                        <img class="projectImage" src="{% static 'img/excused.PNG' %}" alt="">
                     </a>
                 </div>
                 <div class="half center" id="excused-content">
@@ -120,7 +121,7 @@
             <div class="sectionContent" id="portfolio">
                 <div class="half" id="portfolio-img">
                     <a href="#" class="img-link">
-                        <img class="projectImage" src="/img/portfolio.PNG" alt="">
+                        <img class="projectImage" src="{% static 'img/portfolio.PNG' %}" alt="">
                     </a>
                 </div>
                 <div class="half center" id="porfolio-content">
@@ -143,7 +144,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', 
-        'particles.json', function() {
+        'static/particles.json', function() {
             console.log("particles.json loaded...")
         })
     </script>
