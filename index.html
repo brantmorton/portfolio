@@ -7,7 +7,6 @@
     <title>Brant's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
 </head>
@@ -25,15 +24,15 @@
     </div>
         <div id="navbar">
             <ul class="links">
-                <li>ABOUT</li>
+                <a href="#about"><li>ABOUT</li></a> 
                 <li> | </li>
-                <li>PROJECTS</li>
+                <a href="#projects-title"><li>PROJECTS</li></a>
                 <li> | </li>
-                <li> CONTACT </li>
+                <a href="#contact"><li>CONTACT</li></a>
             </ul>
         </div>
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="sectionTitle">ABOUT</div>
             <div class="sectionContent">
                 <div class="half" id="content">
@@ -99,10 +98,9 @@
                 </div>
                 <div class="half center" id="excused-content">
                     <h3>Excused - Excuse Generator</h3>
-                    <p>I built a web app for a local construction company.
-                    Per the client's request, the project includes an application form
-                    that stores applicant information to a database and emails HR 
-                    the applicant's submitted data.
+                    <p>This project generates random excuses for the user. It is built using React Hooks on the frontend, 
+                    with a custom API built on Django Rest Framework for the backend. The app has the functionality to display
+                    categorized excuses that are sorted client side.
                     </p>
                     <p>Backend: Django Rest Framework</p>
                     <p>Frontend: React</p>
@@ -119,28 +117,22 @@
                 </div>
             </div>
 
-            <div class="sectionContent" id="civil">
-                <div class="half" id="civil-img">
-                    <a href="https://www.cccesi.com/" class="img-link" target="_blank">
-                        <img class="projectImage" src="/img/cccesi.PNG" alt="">
+            <div class="sectionContent" id="portfolio">
+                <div class="half" id="portfolio-img">
+                    <a href="#" class="img-link">
+                        <img class="projectImage" src="/img/portfolio.PNG" alt="">
                     </a>
                 </div>
-                <div class="half center" id="civil-content">
-                    <h3>Civil Construction Company</h3>
-                    <p>I built a web app for a local construction company.
-                    Per the client's request, the project includes an application form
-                    that stores applicant information to a database and emails HR 
-                    the applicant's submitted data.
+                <div class="half center" id="porfolio-content">
+                    <h3>Portfolio Site</h3>
+                    <p> This is an on-going project to display my full-stack work. I built the full UI with custom HTML
+                    and CSS. The header is using Particles.js, a Javascript library. The contact section is powered by Django.
                     </p>
-                    <p>Backend: Django, PostgresQL, Apache</p>
-                    <p>Frontend: HTML5,  CSS</p>
+                    <p>Backend: Django</p>
+                    <p>Frontend: HTML5, CSS, Javascript</p>
+            
                     <button class="demo">
-                        <a href="https://www.cccesi.com/" class="project-btn" target="_blank">
-                            DEMO
-                        </a>
-                    </button>
-                    <button class="demo">
-                        <a href="https://github.com/brantmorton/civil-construction" class="project-btn" target="_blank">
+                        <a href="https://github.com/brantmorton/portfolio" class="project-btn" target="_blank">
                             GITHUB
                         </a>
                     </button>

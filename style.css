@@ -99,6 +99,11 @@ a {
     font-weight: 300;
 }
 
+.links > a {
+    font-weight: lighter;
+    letter-spacing: 0;
+}
+
 .links >li:nth-child(1),
 .links >li:nth-child(3),
 .links > li:nth-child(5) {
@@ -231,7 +236,7 @@ img {
         text-align: center;
     }
     
-    #civil-img {
+    #civil-img, #portfolio-img {
         padding: 0;
         order: 1;
     }
@@ -271,10 +276,11 @@ img {
         font-size: 1.25rem;
     }
 
-    .links > li {
+    .links > a {
         font-size: 1rem;
-        
+        padding: 0.5rem;;
     }
+
 
     .sectionTitle {
         font-size: 2rem;
