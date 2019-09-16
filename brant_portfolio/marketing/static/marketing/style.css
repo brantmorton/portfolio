@@ -80,7 +80,12 @@ a {
     border-bottom: 2px solid hsl(170, 100%, 45%);
     margin: 0;
     width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+    position: sticky;
 }
+
+
 
 
 .links {
@@ -150,6 +155,7 @@ a {
     padding: 4rem;
     flex: 1;
     flex-basis: 40%;
+    text-align: center;
 }
 
 
@@ -222,10 +228,33 @@ img {
 
 #excused-img {
     order: 1;
+    ;
 }
 
 
+@media (max-width: 1300px) {
+    
+    .sectionTitle {
+        font-size: 2rem;
+    }
 
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .half {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .sectionContent {
+        padding: 3rem;
+    }
+}
 
 @media (max-width: 1000px) {
     
@@ -255,6 +284,7 @@ img {
 
 }
 
+
 @media (max-width: 800px) {
     h1 {
         font-size: 2.5rem;
@@ -266,6 +296,10 @@ img {
 
     h3 {
         font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
     .btn {
