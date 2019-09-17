@@ -1,0 +1,26 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(227, 27, 110, 0.575);
+}
+
+p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.custom-btn {
+    background: lightgrey;
+    font-family: 'Segoe UI Light', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .display-2 {
+        font-size: 8vh !important;
+        padding-bottom: 2rem;
+    }
+}

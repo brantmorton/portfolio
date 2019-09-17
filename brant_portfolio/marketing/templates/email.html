@@ -20,24 +20,26 @@
             <svg width="50" height="100" style="width: 100%;  ">
                 <use xlink:href="#wave"/>
             </svg>
-            <div style="width: 100%; height:auto; background:hsl(175,77%,46%); padding-top: 1rem;">
+            <div style="width: 100vw; height:auto; background:hsl(175,77%,46%); padding-top: 1rem;">
                 
             </div>
         </div><!-- /.svg_wrapper -->
          
-        <div id="filler"></div>
-        <div id="application-form" class="container">
-            <form enctype="multipart/form-data" method="POST">
-                {% csrf_token %}
-                <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">
-                        CONTACT ME
-                    </legend>
-                    {{ form|crispy }}
-                </fieldset>
-                <div class="form-group">
-                    <button class="btn btn-outline-dark" type="submit">Submit</button>
-                </div>
-            </form>
+        <div class="container-fluid contact-background">
+            <div id="application-form" class="container">
+        
+                <form enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4" id="contact-header">
+                            CONTACT ME
+                        </legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group contact-background">
+                        <button class="btn btn-outline-dark" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 {% endblock %}

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thanks!</title>
+    <link rel="stylesheet" href="{% static 'marketing/success.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Thanks for getting in touch!</h1>
+    <div class="background text-center pt-5">
+        <h1 class="display-2">Thank You!</h1>
+        <p class="">I appreciate you getting in touch. I'll get back with you soon.</p>
+        <hr>
+        <p class="lead p-4">
+            <a class="btn btn-info btn-lg" href="{% url 'home' %}" role="button">Return to homepage</a>
+        </p>
+    </div>
 </body>
 </html>

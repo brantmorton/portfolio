@@ -1,3 +1,5 @@
+
+/*----- General Formatting -----*/
 body {
     box-sizing: border-box;
     color: #252934;
@@ -28,6 +30,7 @@ h1, h2 {
     margin: 0;
 }
 
+/*----- Header -----*/
 #particles-js {
     background: #252934;
     height: 100vh;
@@ -56,7 +59,6 @@ h1, h2 {
     cursor: pointer;
 }
 
-
 .custom-btn:hover {
     background: #E31B6D;
     transition: 0.3s;
@@ -84,6 +86,7 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+/*----- Navbar -----*/
 #navbar {
     background: #1B242F;
     border-bottom: 2px solid hsl(170, 100%, 45%);
@@ -93,9 +96,6 @@ a:hover, a:focus {
     transition: top 0.3s;
     position: sticky;
 }
-
-
-
 
 .links {
     color: white;
@@ -124,7 +124,7 @@ a:hover, a:focus {
     cursor: pointer;
 }
 
-
+/*----- Main Content -----*/
 .section {
     display: flex;
     flex-direction: column;
@@ -161,14 +161,6 @@ a:hover, a:focus {
     margin: auto;
 }
 
-.half {
-    padding: 4rem;
-    flex: 1;
-    flex-basis: 40%;
-    text-align: center;
-}
-
-
 #skills > ul {
     margin: 0;
 }
@@ -179,9 +171,18 @@ a:hover, a:focus {
     list-style-type: none;
 }
 
+.half {
+    padding: 4rem;
+    flex: 1;
+    flex-basis: 40%;
+    text-align: center;
+}
+
 img {
     width: 150px;
 }
+
+/*----- Project Section -----*/
 
 #civil {
     padding-top: 5vh;
@@ -249,6 +250,8 @@ img {
     ;
 }
 
+/*----- Contact Section -----*/
+
 .defs-only {
     position: absolute;
 }
@@ -257,9 +260,29 @@ img {
     background: hsl(175,77%,46%);
 }
 
+.contact-background {
+    background: hsl(175,77%,46%);
+    margin: 0;
+}
+
+
+.container {
+    padding-bottom: 3rem;
+}
+
+#contact-header {
+    text-align: center;
+    
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #252934;
+    opacity: 0.8;
+    padding-bottom: 5vh;
+}
+
 @media (max-width: 1300px) {
     
-    .sectionTitle {
+    .sectionTitle, #contact-header {
         font-size: 2rem;
     }
 
