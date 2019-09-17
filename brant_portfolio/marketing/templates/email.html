@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+        <svg class="defs-only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="wave">
+            <svg viewBox="0 0 100 50" preserveAspectRatio="none" >
+                <g>
+                <path d="M100,30 Q70,40 50,30 T0,30 v20 h100Z" 
+                    style="fill:hsl(175,77%,46%); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"/>
+                </g>
+            </svg>
+        </symbol>
+        </svg>
+
+        <div class="svg_wrapper">
+
+            <svg width="50" height="100" style="width: 100%;  ">
+                <use xlink:href="#wave"/>
+            </svg>
+            <div style="width: 100%; height:auto; background:hsl(175,77%,46%); padding-top: 1rem;">
+                
+            </div>
+        </div><!-- /.svg_wrapper -->
+         
+        <div id="filler"></div>
+        <div id="application-form" class="container">
+            <form enctype="multipart/form-data" method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">
+                        CONTACT ME
+                    </legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-dark" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+{% endblock %}

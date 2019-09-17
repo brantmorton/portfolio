@@ -41,13 +41,13 @@ h1, h2 {
     color: hsl(170, 100%, 45%);
 }
 
-.banner {
+.custom-banner {
     position: absolute;
     text-align: center;
     margin: 0;
 }
 
-.btn {
+.custom-btn {
     margin-top: 1.25rem;
     padding: 0;
     background: transparent;
@@ -57,13 +57,17 @@ h1, h2 {
 }
 
 
-.btn:hover {
+.custom-btn:hover {
     background: #E31B6D;
     transition: 0.3s;
 } 
 
-.btn:focus {
+.custom-btn:focus {
     outline: none;
+}
+
+.gray-hover:hover {
+    color: #252934;
 }
 
 a {
@@ -73,6 +77,11 @@ a {
     color: white;
     letter-spacing: 1.5px;
     font-size: 1.5rem;
+}
+
+a:hover, a:focus {
+    color: #E31B6D;
+    text-decoration: none;
 }
 
 #navbar {
@@ -114,6 +123,7 @@ a {
 .links > li:nth-child(5) {
     cursor: pointer;
 }
+
 
 .section {
     display: flex;
@@ -226,11 +236,26 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
+.project-btn:hover {
+    color: inherit;
+}
+
+.svgcolor-light {
+    background: #252934;
+}
+
 #excused-img {
     order: 1;
     ;
 }
 
+.defs-only {
+    position: absolute;
+}
+
+#application-form {
+    background: hsl(175,77%,46%);
+}
 
 @media (max-width: 1300px) {
     
@@ -302,7 +327,7 @@ img {
         font-size: 1rem;
     }
 
-    .btn {
+    .custom-btn {
         font-size: 0.75rem;
     }
 
@@ -335,6 +360,10 @@ img {
 
     .projectImage:hover {
         transform: none;
+    }
+
+    .half {
+        flex: 0 0 100%;
     }
 
 }

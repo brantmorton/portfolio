@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'marketing'
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,3 +123,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'brantmort@gmail.com'
+EMAIL_HOST_PASSWORD = 'westlake5'
+
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
