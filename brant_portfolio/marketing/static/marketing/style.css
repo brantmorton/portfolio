@@ -280,6 +280,17 @@ img {
     padding-bottom: 5vh;
 }
 
+#socials {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.social-icons {
+    width: 75px;
+    margin: 1vw;
+}
+
 @media (max-width: 1300px) {
     
     .sectionTitle, #contact-header {
@@ -391,3 +402,13 @@ img {
 
 }
 
+@media (max-width: 500px) {
+    .social-icons {
+        width: 60px;
+        margin: 10px;
+    }
+
+    #socials {
+        padding: 4vh;
+    }
+}
