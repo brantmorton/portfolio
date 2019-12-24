@@ -21,6 +21,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'marketing/style.css' %}">
+    <script>
+        window.onload = function() {
+            var recaptcha = document.forms["myForm"]["g-recaptcha-response"];
+            recaptcha.required = true;
+            recaptcha.oninvalid = function(e) {
+                // do something
+                alert("Please complete the captcha");
+        }
+        }
+    </script>
+
 </head>
 <body>
     <div id="particles-js">

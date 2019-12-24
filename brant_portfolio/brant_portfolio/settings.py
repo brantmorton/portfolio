@@ -18,7 +18,6 @@ with open('/etc/config.json') as config_file:
     config = json.load(config_file)
 
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -137,7 +136,10 @@ STATIC_URL = '/static/'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '465'
 EMAIL_HOST_USER = config['EMAIL_USER']
-EMAIL_HOST_PASSWORD = config['EMAIL_PASS']
+EMAIL_HOST_PASSWORD = 
 
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
+
+RECAPTCHA_SITE_KEY= '6LfgzskUAAAAAO35hR6G0UDaafXAOAYU6wL7mveN'
+RECAPTCHA_SECRET_KEY = config['RECAPTCHA_SECRET_KEY']
