@@ -188,7 +188,7 @@ img {
     padding-top: 5vh;
 }
 
-#projects-title, #excused {
+#projects-title, #excused, #coffee {
     background: #00aa8e0c;
 }
 
@@ -245,7 +245,7 @@ img {
     background: #252934;
 }
 
-#excused-img {
+#excused-img, #coffee-img {
     order: 1;
     ;
 }
@@ -329,7 +329,7 @@ img {
         order: 1;
     }
 
-    #excused-img {
+    #excused-img, #coffee-img {
         padding: 0;
     }
 
