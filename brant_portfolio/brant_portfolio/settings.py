@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import json
 
+# '/etc/config.json'
 with open('/etc/config.json') as config_file:
     config = json.load(config_file)
 
@@ -27,6 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config['PORTFOLIO_KEY']
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -136,7 +138,7 @@ STATIC_URL = '/static/'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '465'
 EMAIL_HOST_USER = config['EMAIL_USER']
-EMAIL_HOST_PASSWORD = 
+EMAIL_HOST_PASSWORD = config['EMAIL_PASS']
 
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
